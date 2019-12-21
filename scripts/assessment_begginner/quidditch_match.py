@@ -20,10 +20,9 @@ for number in group:
     else:
         print(group[i - 1], count)
         list1.append("(" + group[i - 1] + "" + str(count) + ")")
-
-    # print(i, number)
     i = i + 1
 
 print(list1)
 
-# [(G,4), (S,2), (H,3), (G,2), (R,5), (S,3), (H,5)]
+# o/p:
+# ['(G4)', '(S2)', '(H3)', '(G2)', '(R5)', '(S3)', '(H5)']

@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-@Iru_cache(maxsize=1000)   #default limit = 128
+@lru_cache(maxsize=1000)   #default limit = 128
 def fibonacci(n):
 	if type(n)!=int:
 		raise TypeError("Enter a Interger Value")

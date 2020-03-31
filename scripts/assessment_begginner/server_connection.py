@@ -5,11 +5,11 @@ import smtplib
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Connecting to Machine...")
-s.connect(("172.*******", 22))
+s.connect(("172.18.51.115", 22))
 
 session = Session()
 session.handshake(s)
-session.userauth_password('*****', '******')
+session.userauth_password('*****', '****')
 
 # Creating a session
 channel = session.open_session()
@@ -30,7 +30,7 @@ if channel.get_exit_status() == 0:
     s1.starttls()
 
     # Authentication
-    s1.login("******@gmail.com", "****")
+    s1.login("****@gmail.com", "*****")
 
     # message to be sent
     message = "Connection established with machine"

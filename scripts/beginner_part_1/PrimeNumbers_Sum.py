@@ -10,17 +10,17 @@ def isPrime(num):
 		return False
 
 	max_divisor = math.floor(math.sqrt(num))
-	# print(str(math.sqrt(num))
+	print(max_divisor)
 
 	for n in range(3,1+max_divisor,2):
 		if num % n == 0:
-			# print(str(n)+" Number "+str(num)+" is not a prime number")
+			print(str(n)+" Number "+str(num)+" is not a prime number")
 			return False
 	return True
 
 sumOfPrime = 0
 
-for a in range(2,2000000):
+for a in range(2,5):
 	if(isPrime(a)==True):
 		sumOfPrime+=a
 

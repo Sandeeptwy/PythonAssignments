@@ -1,4 +1,4 @@
-group = ["G", "G", "G", "G", "S", "S", "H", "H", "H", "G", "G", "R", "R", "R", "R", "R", "S", "S", "S", "H", "H", "H",
+group = ["G", "S", "G", "G", "S", "S", "H", "H", "H", "G", "G", "R", "R", "R", "R", "R", "S", "S", "S", "H", "H", "H",
          "H", "H"]
 
 length = len(group)

@@ -1,5 +1,5 @@
-from functools import lru_cache
 import time
+from functools import lru_cache
 
 nth = 1002
 count = 0

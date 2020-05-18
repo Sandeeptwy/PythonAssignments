@@ -20,3 +20,6 @@ def sortString(s):
         except Exception as e:
             return False
 
+
+s = list('A1a1S4')
+print(sortString(s))

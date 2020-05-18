@@ -26,4 +26,7 @@ def pnrstatus(querystring):
         return response.status_code
 
 
-print(pnrstatus(123456))
+
+
+if __name__ == "__main__": #Doesn't run while import
+    print(pnrstatus(123456))

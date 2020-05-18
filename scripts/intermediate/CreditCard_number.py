@@ -15,3 +15,5 @@ def is_valid_card_number(val):
         else:
             print("Valid credit card number")
             return True
+
+print(is_valid_card_number("4569999999999999"))

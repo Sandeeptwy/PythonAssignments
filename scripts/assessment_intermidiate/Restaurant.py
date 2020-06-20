@@ -1,15 +1,24 @@
-s = int(input("Enter the # of customer details\n"))
+s = int(input("Enter the # of customer details b/w 1 and 105\n"))
+while 1 == 1:
+    if s > 105 or s < 1:
+        print("The # of customers should be b/w 1 and 105")
+        s = int(input("Enter the # of customer details\n"))
+        continue
+    else:
+        break
 
 list = []
 list_time = []
 l = s
 while l > 0:
     i = input(
-        "Enter the details of customers in follwing format ""2 5"", here 2 will be the time customer entered the Restaurant and 5 is the time required to make the order\n")
-    if i[1] != ' ':
+        "Enter the details of customers in following format ""2 5"", here 5 will be the time customer entered the "
+        "Restaurant and 2 is the time required to make the order\n")
+    if i[1] != ' ' or i[0] == ' ':
         print("Wrong format Re-Enter")
         i = input(
-            "Enter the details of customers in follwing format ""2 5"", here 2 will be the time customer entered the Restaurant and 5 is the time required to make the order\n")
+            "Enter the details of customers in following format ""2 5"", here 5 will be the time customer entered the "
+            "Restaurant and 2 is the time required to make the order\n")
 
     list.append(i[0])
     list_time.append(i[2])

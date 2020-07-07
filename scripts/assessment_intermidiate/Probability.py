@@ -1,59 +1,65 @@
 from itertools import permutations
 from itertools import combinations
 
-s = int(input("Enter the length of a string b/w 1 and 10\n"))
-while 1 == 1:
-    if s > 10 or s < 1:
-        print("Enter the length of a string b/w 1 and 10")
-        s = int(input("Enter the # of customer details\n"))
-        continue
-    else:
-        break
+# use functions
+
+length_string = int(input("Enter the length of a string b/w 1 and 10\n"))
 
 string = []
-l = s
-
-i = input(
-    "Enter the string space separated in lower case\n")
-while 1 == 1:
-
-    if i[1] != ' ' or i[0] == ' ' or len(i) != s * 2 - 1:
-        print("Wrong format or length doesn't match. Re-Enter")
-        i = input(
-            "Enter the string space separated in lower case\n")
-        continue
-    else:
-        for b in i:
-            if b == ' ':
-                continue
-            else:
-                string.append(b)
-        break
-
-a = int(input("Enter the indices\n"))
-
-while 1 == 1:
-    if a > s or a < 1:
-        print("Index should be between ", s, " and 1")
-        a = int(input("Enter the indices\n"))
-        continue
-    else:
-        break
 
 
-def check_probablity(string, a):
-    perm = combinations(string, a)
+def input_from_user(length_string):
+    while 1 == 1:
+        if length_string > 10 or length_string < 1:
+            print("Wrong input, Enter the length of a string b/w 1 and 10")
+            length_string = int(input("Enter the length of a string b/w 1 and 10\n"))
+            continue
+        else:
+            break
+
+    # l = length_string
+
+    entered_string = input(
+        "Enter the string space separated in lower case\n")
+    while 1 == 1:
+        if entered_string[1] != ' ' or entered_string[0] == ' ' or len(entered_string) != length_string * 2 - 1:
+            print("Wrong format or length doesn't match. Re-Enter")
+            entered_string = input(
+                "Enter the string space separated in lower case\n")
+            continue
+        else:
+            for character in entered_string:
+                if character == ' ':
+                    continue
+                else:
+                    string.append(character)
+            break
+
+
+def enter_indices(length_string, indices):
+    while 1 == 1:
+        if indices > length_string or indices < 1:
+            print("Index should be between ", length_string, " and 1")
+            indices = int(input("Enter the indices\n"))
+            continue
+        else:
+            break
+
+
+def check_probablity(string, indices):
+    perm = combinations(string, indices)
     count = 0
     size = 0
-    for i in perm:
-        if 'a' in i:
+    for characters in perm:
+        if 'a' in characters:
             count = count + 1
         size = size + 1
-        print(i)
+        print(characters)
     print(count, size)
     print(count / size)
 
 
-print(list)
-
-check_probablity(string, a)
+input_from_user(length_string)
+indices = int(input("Enter the indices\n"))
+enter_indices(length_string, indices)
+check_probablity(string, indices)

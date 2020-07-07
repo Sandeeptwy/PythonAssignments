@@ -1,58 +1,66 @@
-s = int(input("Enter the # of customer details b/w 1 and 105\n"))
-while 1 == 1:
-    if s > 105 or s < 1:
-        print("The # of customers should be b/w 1 and 105")
-        s = int(input("Enter the # of customer details\n"))
-        continue
-    else:
-        break
+totalcustomers = int(input("Enter the # of customer details b/w 1 and 105\n"))
 
-list = []
-list_time = []
-l = s
-while l > 0:
-    i = input(
-        "Enter the details of customers in following format ""2 5"", here 5 will be the time customer entered the "
-        "Restaurant and 2 is the time required to make the order\n")
-    if i[1] != ' ' or i[0] == ' ':
-        print("Wrong format Re-Enter")
-        i = input(
-            "Enter the details of customers in following format ""2 5"", here 5 will be the time customer entered the "
-            "Restaurant and 2 is the time required to make the order\n")
-
-    list.append(i[0])
-    list_time.append(i[2])
-    l = l - 1
+list_ordertime = []
+list_entrytime = []
 
 
-def check_best_wait_time(list, list_time, s):
-    c1 = list
-    c2 = []
+def input_details(totalcustomers):
+    while 1 == 1:
+        if totalcustomers > 105 or totalcustomers < 1:
+            print("The # of customers should be b/w 1 and 105")
+            totalcustomers = int(input("Enter the # of customer details\n"))
+            continue
+        else:
+            break
 
-    dic = {}
-    for a in range(s):
-        dic[str(list[a])] = list_time[a]
-
-    print(dic)
-    c1.sort()
-
-    b = 0
-    for a in c1:
-        b = b + int(a)
-        c2.append(b)
-
-    l = 0
-    for a in c1:
-        c2[l] = c2[l] - int(dic.get(str(a)))
-        l = l + 1
-
-    print("Waiting Time for each individual ", c2)
-
-    b = 0
-    for a in c2:
-        b = b + a
-
-    print(b / s)
+    totalcustomersnumber = totalcustomers
+    while totalcustomersnumber > 0:
+        customerdetails = input(
+            "Enter the details of customers in following format ""5 2"", here 5 is the time required to make the order"
+            "and 2 will be the time customer entered the Restaurant\n")
+        while 1 == 1:
+            if customerdetails[1] != ' ' or customerdetails[0] == ' ':
+                print("Wrong format Re-Enter")
+                customerdetails = input(
+                    "Enter the details of customers in following format ""5 2"", here 5 is the time required to make the order"
+                    "and 2 will be the time customer entered the Restaurant\n")
+                continue
+            else:
+                break
+        list_ordertime.append(customerdetails[0])
+        list_entrytime.append(customerdetails[2])
+        totalcustomersnumber = totalcustomersnumber - 1
 
 
-check_best_wait_time(list, list_time, s)
+def check_best_wait_time(list_ordertime, list_entrytime, totalcustomers):
+    list_ordertime_local = list_ordertime
+    waiting_time_individual = []
+
+    dict_ordertime_entrytime = {}
+    for values in range(totalcustomers):
+        dict_ordertime_entrytime[str(list_ordertime[values])] = list_entrytime[values]
+
+    print(dict_ordertime_entrytime)
+    list_ordertime_local.sort()
+
+    count_ordertime = 0
+    for ordertime in list_ordertime_local:
+        count_ordertime = count_ordertime + int(ordertime)
+        waiting_time_individual.append(count_ordertime)
+
+    index = 0
+    for ordertime in list_ordertime_local:
+        waiting_time_individual[index] = waiting_time_individual[index] - int(dict_ordertime_entrytime.get(str(ordertime)))
+        index = index + 1
+
+    print("Waiting Time for each individual ", waiting_time_individual)
+
+    total_watingtime = 0
+    for waitingtime in waiting_time_individual:
+        total_watingtime = total_watingtime + waitingtime
+
+    print(total_watingtime / totalcustomers)
+
+
+input_details(totalcustomers)
+check_best_wait_time(list_ordertime, list_entrytime, totalcustomers)

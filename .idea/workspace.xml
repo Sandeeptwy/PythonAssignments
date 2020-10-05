@@ -20,6 +20,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="6380fb6f-9bb7-45a4-b40d-05d5d23e3970" />
+  </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -28,7 +31,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1VIqfW3DgKTYg0vdy83bCuhbpRj" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -39,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -273,26 +276,52 @@
       <option name="project" value="LOCAL" />
       <updated>1601887889921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Beginner Assignment and Assessment.">
+      <created>1601889031255</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601889031255</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Beginner Assignment and Assessment." />
     <option name="LAST_COMMIT_MESSAGE" value="Added Beginner Assignment and Assessment." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="1" key="CommitChangelistDialog2" timestamp="1601887888230">
+    <state x="361" y="75" key="#Notifications" timestamp="1601889083439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601887888230" />
-    <state x="561" y="182" key="FileChooserDialogImpl" timestamp="1601889002058">
+    <state x="361" y="75" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1601889083439" />
+    <state x="0" y="1" key="CommitChangelistDialog2" timestamp="1601889030232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="561" y="182" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601889002058" />
+    <state x="0" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601889030232" />
+    <state x="561" y="182" key="FileChooserDialogImpl" timestamp="1601889348618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="182" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601889348618" />
     <state x="607" y="331" width="345" height="162" key="Github.CreateGistDialog" timestamp="1601887428380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="607" y="331" width="345" height="162" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1601887428380" />
+    <state x="632" y="320" key="Github.Dialog.Accounts.Choose" timestamp="1601889558483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="632" y="320" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1601889558483" />
     <state width="1515" height="115" key="GridCell.Tab.0.bottom" timestamp="1594132627220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -309,14 +338,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="115" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594132627220" />
-    <state x="279" y="58" key="SettingsEditor" timestamp="1601888033832">
+    <state x="279" y="58" key="SettingsEditor" timestamp="1601889629301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601888033832" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1601887898135">
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601889629301" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1601889035161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601887898135" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601889035161" />
     <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1601887409348">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
